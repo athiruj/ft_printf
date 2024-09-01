@@ -1,26 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putlstr.c                                       :+:      :+:    :+:   */
+/*   ft_nbrlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: athi <athi@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/30 22:19:44 by athi              #+#    #+#             */
-/*   Updated: 2024/08/31 11:14:04 by athi             ###   ########.fr       */
+/*   Created: 2024/08/31 13:01:37 by athi              #+#    #+#             */
+/*   Updated: 2024/08/31 15:15:28 by athi             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../ft_printf.h"
 
-int	ft_putlstr(const char *s)
+size_t	ft_nbrlen(long nbr)
 {
 	size_t	len;
 
-	len = 0;
-	if (!s)
-		return (ft_putnull('s'));
-	while (s[len])
-		if (write(1, &s[len++], 1) == -1)
-			return (-1);
+	len = 1;
+	if (nbr < 0)
+		len++;
+	nbr /= 10;
+	while (nbr)
+	{
+		len++;
+		nbr /= 10;
+	}
 	return (len);
 }
