@@ -6,7 +6,7 @@
 /*   By: atkaewse <atkaewse@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/29 21:56:03 by athi              #+#    #+#             */
-/*   Updated: 2024/09/01 15:09:31 by atkaewse         ###   ########.fr       */
+/*   Updated: 2024/09/01 16:07:30 by atkaewse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@
 # include <limits.h>
 
 int		ft_printf(const	char *format, ...);
+int		ft_format(va_list	*arg, const char f);
 
 int		ft_putnull(const char f);
 int		ft_putlchar(const char c);
