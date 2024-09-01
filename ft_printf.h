@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: athi <athi@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: atkaewse <atkaewse@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/29 21:56:03 by athi              #+#    #+#             */
-/*   Updated: 2024/09/01 15:01:26 by athi             ###   ########.fr       */
+/*   Updated: 2024/09/01 15:09:31 by atkaewse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,9 +26,9 @@ int		ft_putlstr(const char *s);
 int		ft_putlnbr(int nbr);
 int		ft_putlunbr(unsigned int nbr);
 int		ft_putlhex(unsigned int nbr, char f);
-int		ft_putlptr(uintptr_t ptr);
+int		ft_putlptr(unsigned long ptr);
 
 size_t	ft_nbrlen(long nbr);
-size_t	ft_putptr(uintptr_t nbr);
+size_t	ft_putptr(unsigned long nbr);
 
 #endif

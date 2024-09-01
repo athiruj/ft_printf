@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putlchar.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: athi <athi@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: atkaewse <atkaewse@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/30 22:10:55 by athi              #+#    #+#             */
-/*   Updated: 2024/08/31 15:42:52 by athi             ###   ########.fr       */
+/*   Updated: 2024/09/01 15:11:06 by atkaewse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,6 @@
 
 int	ft_putlchar(const char c)
 {
-	// if (!c)
-	// 	return (ft_putnull('c'));
 	if (write(1, &c, 1) == -1)
 		return (-1);
 	return (1);

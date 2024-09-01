@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putlhex.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: athi <athi@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: atkaewse <atkaewse@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/31 15:52:30 by athi              #+#    #+#             */
-/*   Updated: 2024/09/01 14:58:04 by athi             ###   ########.fr       */
+/*   Updated: 2024/09/01 15:11:21 by atkaewse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../ft_printf.h"
-#include <stdio.h>
 
 int	ft_putlhex(unsigned int nbr, char f)
 {

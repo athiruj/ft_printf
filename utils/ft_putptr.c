@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putptr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: athi <athi@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: atkaewse <atkaewse@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/01 14:15:03 by athi              #+#    #+#             */
-/*   Updated: 2024/09/01 14:53:09 by athi             ###   ########.fr       */
+/*   Updated: 2024/09/01 15:11:36 by atkaewse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../ft_printf.h"
 
-size_t	ft_putptr(uintptr_t nbr)
+size_t	ft_putptr(unsigned long nbr)
 {
 	char	*hex;
 	size_t	len;
@@ -28,6 +28,5 @@ size_t	ft_putptr(uintptr_t nbr)
 		len += ft_putlchar(hex[nbr]);
 	if (len < 0)
 		return (-1);
-
 	return (len);
 }

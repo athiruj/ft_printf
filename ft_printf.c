@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: athi <athi@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: atkaewse <atkaewse@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/29 22:00:04 by athi              #+#    #+#             */
-/*   Updated: 2024/09/01 14:56:01 by athi             ###   ########.fr       */
+/*   Updated: 2024/09/01 15:10:54 by atkaewse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-#include <stdio.h>
 
 int	ft_format(va_list	*arg, const char f);
 
@@ -64,4 +63,3 @@ int	ft_format(va_list *arg, const char f)
 		return (ft_putlchar('%'));
 	return (-1);
 }
-
