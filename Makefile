@@ -6,7 +6,7 @@ RM			=	rm -rf
 UTILSPATH	= 	utils/
 
 SRCSFILE	=	ft_printf.c
-UTILSFILE	=	$(addprefix $(UTILSPATH), ft_putnull.c ft_putlchar.c ft_putlstr.c ft_putlnbr.c ft_putlunbr.c ft_putlhex.c ft_putlptr.c ft_putptr.c ft_nbrlen.c)
+UTILSFILE	=	$(addprefix $(UTILSPATH), ft_format.c ft_putnull.c ft_putlchar.c ft_putlstr.c ft_putlnbr.c ft_putlunbr.c ft_putlhex.c ft_putlptr.c ft_putptr.c ft_nbrlen.c)
 
 OBJS		=	$(SRCSFILE:.c=.o)
 UTILSOBJS	=	$(UTILSFILE:.c=.o)
